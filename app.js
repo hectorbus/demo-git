@@ -16,7 +16,7 @@ http.createServer(server).listen(8080);
 
 //Segunda implementación
 
-http.createServer(function(request, response) {
+http.createServer((request, response) => {
   response.writeHead(200, {
     "Content-Type": "text/html"
   });
